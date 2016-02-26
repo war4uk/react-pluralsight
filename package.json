@@ -1,0 +1,36 @@
+{
+  "name": "react-pluralsight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserify-shim": {
+    "jquery": "$",
+    "react": "global:React",
+    "react-dom": "global:ReactDOM"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12",
+    "tsify": "^0.13.2",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/war4uk/react-pluralsight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/war4uk/react-pluralsight/issues"
+  },
+  "homepage": "https://github.com/war4uk/react-pluralsight#readme"
+}

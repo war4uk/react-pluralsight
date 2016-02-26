@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ReactJS and Flux</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="//fb.me/react-0.14.7.js"></script>
+    <script src="//fb.me/react-dom-0.14.7.js"></script>
+</head>
+
+<body>
+    <section id="forum">
+    </section>
+    <script src="bundle.js"></script>
+    
+    node_modules\.bin\browserify ./js/app.ts -r ./typings/tsd.d.ts -p tsify -o bundle.js --debug
+</body>
+
+</html>
