@@ -21,7 +21,7 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/.bin/browserify ./js/app.ts -r ./typings/tsd.d.ts -p tsify -o bundle.js --debug"
   },
   "repository": {
     "type": "git",
