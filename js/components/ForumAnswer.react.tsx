@@ -1,13 +1,7 @@
 import * as React from 'react';
 
-export var ForumAnswer = React.createClass<any, any>({ // <any, any> - are typings for props and state objects. If omit will get ".... does not have a 'props' property ..." error in ForumAnswers
-
-    propTypes: {
-        answer: React.PropTypes.object.isRequired
-    },
-
-    render: function() {
- 
+export class ForumAnswer extends React.Component<{key: string, id: string, answer: any}, any> {
+    render() {
         var answer = this.props.answer;
 
         return (
@@ -18,5 +12,4 @@ export var ForumAnswer = React.createClass<any, any>({ // <any, any> - are typin
             </div>
         )
     }
-
-});
+}
